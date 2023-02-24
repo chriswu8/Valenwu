@@ -15,6 +15,7 @@ namespace Valenwu
         public int? GroupId { get; set; }
     }*/
 
+    // Table definition
     public class Group
     {
         public int Id { get; set; }
@@ -27,6 +28,7 @@ namespace Valenwu
     {
         public MyDatabase()
         {
+            // Create table
             /*var members = this.Tables.Create<Member, int>(x => x.Id);*/
             var groups = base.Tables.Create<Group, int>(g => g.Id);
 
@@ -66,8 +68,8 @@ namespace Valenwu
         {
             MyDatabase myDatabase = new MyDatabase();
 
+            // insert data into table
             myDatabase.Groups.Insert(new Group() { Id = 1, Name = "Edmond" });
-
             myDatabase.Groups.Insert(new Group() { Id = 2, Name = "Chris" });
 
             /*myDatabase.Members.Insert(new Member() { Id = 1, GroupId = 1, Name = "It's Member_1" });
@@ -94,10 +96,6 @@ namespace Valenwu
 
 
             var list2 = myDatabase.Groups.ToList();
-
-
-
-
 
             //FiddleHelper.WriteTable("Members", list);
 
