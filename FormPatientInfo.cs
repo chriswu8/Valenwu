@@ -16,5 +16,15 @@ namespace Valenwu
         {
             InitializeComponent();
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

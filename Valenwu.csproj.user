@@ -7,6 +7,9 @@
     <Compile Update="FormConfirmAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormEOD.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -23,6 +26,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormServices.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

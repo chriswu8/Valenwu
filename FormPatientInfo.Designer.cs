@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,8 +66,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -86,8 +86,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -110,8 +108,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.label18);
+            this.tabPage1.Controls.Add(this.textBox24);
             this.tabPage1.Controls.Add(this.label12);
             this.tabPage1.Controls.Add(this.textBox12);
             this.tabPage1.Controls.Add(this.label13);
@@ -151,9 +149,27 @@
             this.tabPage1.Text = "General Information";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(561, 248);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(48, 20);
+            this.label18.TabIndex = 67;
+            this.label18.Text = "P.H.N.";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(615, 245);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(229, 27);
+            this.textBox24.TabIndex = 66;
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(638, 524);
+            this.button2.Location = new System.Drawing.Point(684, 653);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 39);
             this.button2.TabIndex = 65;
@@ -162,7 +178,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(744, 524);
+            this.button1.Location = new System.Drawing.Point(806, 653);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 39);
             this.button1.TabIndex = 64;
@@ -419,8 +435,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.textBox22);
             this.tabPage2.Controls.Add(this.textBox23);
             this.tabPage2.Controls.Add(this.textBox26);
@@ -445,24 +459,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Prescription";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(638, 524);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 39);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(744, 524);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 39);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // textBox22
             // 
@@ -619,8 +615,6 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.button6);
-            this.tabPage5.Controls.Add(this.button5);
             this.tabPage5.Controls.Add(this.richTextBox1);
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
@@ -630,29 +624,11 @@
             this.tabPage5.Text = "Notes";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(744, 524);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 39);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(638, 524);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 39);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Save";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(884, 474);
+            this.richTextBox1.Size = new System.Drawing.Size(884, 582);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -660,8 +636,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 648);
+            this.ClientSize = new System.Drawing.Size(924, 710);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Name = "FormPatientInfo";
             this.Text = "FormPatientInfo";
             this.tabControl1.ResumeLayout(false);
@@ -732,10 +710,8 @@
         private TabPage tabPage3;
         private TabPage tabPage4;
         private TabPage tabPage5;
-        private Button button4;
-        private Button button3;
-        private Button button6;
-        private Button button5;
         private RichTextBox richTextBox1;
+        private Label label18;
+        private TextBox textBox24;
     }
 }
