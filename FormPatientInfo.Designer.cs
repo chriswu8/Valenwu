@@ -33,35 +33,35 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.first_visit = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.last_visit = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.occupation = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.misc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.insurance = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.postal_code = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.province = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.birth_date = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.city = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.middle_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.first_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.last_name = new System.Windows.Forms.TextBox();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
@@ -113,35 +113,35 @@
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.textBox12);
+            this.tabPage1.Controls.Add(this.first_visit);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.last_visit);
             this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.textBox14);
+            this.tabPage1.Controls.Add(this.occupation);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.textBox15);
+            this.tabPage1.Controls.Add(this.email);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.misc);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.textBox9);
+            this.tabPage1.Controls.Add(this.insurance);
             this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.textBox10);
+            this.tabPage1.Controls.Add(this.postal_code);
             this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.textBox11);
+            this.tabPage1.Controls.Add(this.province);
             this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.phone);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.birth_date);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.city);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.address);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.middle_name);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.first_name);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.last_name);
             this.tabPage1.Controls.Add(this.domainUpDown1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -159,6 +159,7 @@
             this.button2.TabIndex = 65;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -178,12 +179,13 @@
             this.label12.TabIndex = 63;
             this.label12.Text = "First visit";
             // 
-            // textBox12
+            // first_visit
             // 
-            this.textBox12.Location = new System.Drawing.Point(225, 454);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(229, 27);
-            this.textBox12.TabIndex = 62;
+            this.first_visit.Location = new System.Drawing.Point(225, 454);
+            this.first_visit.Name = "first_visit";
+            this.first_visit.Size = new System.Drawing.Size(229, 27);
+            this.first_visit.TabIndex = 62;
+            this.first_visit.Text = "Jan 2nd, 2023";
             // 
             // label13
             // 
@@ -194,12 +196,13 @@
             this.label13.TabIndex = 61;
             this.label13.Text = "Last visit";
             // 
-            // textBox13
+            // last_visit
             // 
-            this.textBox13.Location = new System.Drawing.Point(225, 421);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(229, 27);
-            this.textBox13.TabIndex = 60;
+            this.last_visit.Location = new System.Drawing.Point(225, 421);
+            this.last_visit.Name = "last_visit";
+            this.last_visit.Size = new System.Drawing.Size(229, 27);
+            this.last_visit.TabIndex = 60;
+            this.last_visit.Text = "Jan 1st, 2023";
             // 
             // label14
             // 
@@ -210,12 +213,13 @@
             this.label14.TabIndex = 59;
             this.label14.Text = "Occupation";
             // 
-            // textBox14
+            // occupation
             // 
-            this.textBox14.Location = new System.Drawing.Point(225, 388);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(229, 27);
-            this.textBox14.TabIndex = 58;
+            this.occupation.Location = new System.Drawing.Point(225, 388);
+            this.occupation.Name = "occupation";
+            this.occupation.Size = new System.Drawing.Size(229, 27);
+            this.occupation.TabIndex = 58;
+            this.occupation.Text = "Student";
             // 
             // label15
             // 
@@ -226,12 +230,13 @@
             this.label15.TabIndex = 57;
             this.label15.Text = "E-mail";
             // 
-            // textBox15
+            // email
             // 
-            this.textBox15.Location = new System.Drawing.Point(225, 308);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(229, 27);
-            this.textBox15.TabIndex = 56;
+            this.email.Location = new System.Drawing.Point(225, 308);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(229, 27);
+            this.email.TabIndex = 56;
+            this.email.Text = "test@gmail.com";
             // 
             // label8
             // 
@@ -242,12 +247,13 @@
             this.label8.TabIndex = 55;
             this.label8.Text = "Misc";
             // 
-            // textBox8
+            // misc
             // 
-            this.textBox8.Location = new System.Drawing.Point(615, 391);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(229, 27);
-            this.textBox8.TabIndex = 54;
+            this.misc.Location = new System.Drawing.Point(615, 391);
+            this.misc.Name = "misc";
+            this.misc.Size = new System.Drawing.Size(229, 27);
+            this.misc.TabIndex = 54;
+            this.misc.Text = "misc test";
             // 
             // label9
             // 
@@ -258,12 +264,13 @@
             this.label9.TabIndex = 53;
             this.label9.Text = "Insurance";
             // 
-            // textBox9
+            // insurance
             // 
-            this.textBox9.Location = new System.Drawing.Point(615, 358);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(229, 27);
-            this.textBox9.TabIndex = 52;
+            this.insurance.Location = new System.Drawing.Point(615, 358);
+            this.insurance.Name = "insurance";
+            this.insurance.Size = new System.Drawing.Size(229, 27);
+            this.insurance.TabIndex = 52;
+            this.insurance.Text = "12345";
             // 
             // label10
             // 
@@ -274,12 +281,13 @@
             this.label10.TabIndex = 51;
             this.label10.Text = "Postal code";
             // 
-            // textBox10
+            // postal_code
             // 
-            this.textBox10.Location = new System.Drawing.Point(615, 212);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(229, 27);
-            this.textBox10.TabIndex = 50;
+            this.postal_code.Location = new System.Drawing.Point(615, 212);
+            this.postal_code.Name = "postal_code";
+            this.postal_code.Size = new System.Drawing.Size(229, 27);
+            this.postal_code.TabIndex = 50;
+            this.postal_code.Text = "VA12T5";
             // 
             // label11
             // 
@@ -290,12 +298,13 @@
             this.label11.TabIndex = 49;
             this.label11.Text = "Province";
             // 
-            // textBox11
+            // province
             // 
-            this.textBox11.Location = new System.Drawing.Point(615, 179);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(229, 27);
-            this.textBox11.TabIndex = 48;
+            this.province.Location = new System.Drawing.Point(615, 179);
+            this.province.Name = "province";
+            this.province.Size = new System.Drawing.Size(229, 27);
+            this.province.TabIndex = 48;
+            this.province.Text = "BC";
             // 
             // label6
             // 
@@ -306,12 +315,13 @@
             this.label6.TabIndex = 47;
             this.label6.Text = "Phone";
             // 
-            // textBox6
+            // phone
             // 
-            this.textBox6.Location = new System.Drawing.Point(225, 275);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(229, 27);
-            this.textBox6.TabIndex = 46;
+            this.phone.Location = new System.Drawing.Point(225, 275);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(229, 27);
+            this.phone.TabIndex = 46;
+            this.phone.Text = "604-123-4567";
             // 
             // label7
             // 
@@ -322,12 +332,13 @@
             this.label7.TabIndex = 45;
             this.label7.Text = "Birth date";
             // 
-            // textBox7
+            // birth_date
             // 
-            this.textBox7.Location = new System.Drawing.Point(225, 242);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(229, 27);
-            this.textBox7.TabIndex = 44;
+            this.birth_date.Location = new System.Drawing.Point(225, 242);
+            this.birth_date.Name = "birth_date";
+            this.birth_date.Size = new System.Drawing.Size(229, 27);
+            this.birth_date.TabIndex = 44;
+            this.birth_date.Text = "Dec 12, 1999";
             // 
             // label5
             // 
@@ -338,12 +349,13 @@
             this.label5.TabIndex = 43;
             this.label5.Text = "City";
             // 
-            // textBox5
+            // city
             // 
-            this.textBox5.Location = new System.Drawing.Point(225, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(229, 27);
-            this.textBox5.TabIndex = 42;
+            this.city.Location = new System.Drawing.Point(225, 209);
+            this.city.Name = "city";
+            this.city.Size = new System.Drawing.Size(229, 27);
+            this.city.TabIndex = 42;
+            this.city.Text = "Vancouver";
             // 
             // label4
             // 
@@ -354,12 +366,13 @@
             this.label4.TabIndex = 41;
             this.label4.Text = "Address";
             // 
-            // textBox4
+            // address
             // 
-            this.textBox4.Location = new System.Drawing.Point(225, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(229, 27);
-            this.textBox4.TabIndex = 40;
+            this.address.Location = new System.Drawing.Point(225, 176);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(229, 27);
+            this.address.TabIndex = 40;
+            this.address.Text = "1234 Street";
             // 
             // label3
             // 
@@ -370,12 +383,13 @@
             this.label3.TabIndex = 39;
             this.label3.Text = "Middle name";
             // 
-            // textBox3
+            // middle_name
             // 
-            this.textBox3.Location = new System.Drawing.Point(615, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(229, 27);
-            this.textBox3.TabIndex = 38;
+            this.middle_name.Location = new System.Drawing.Point(615, 75);
+            this.middle_name.Name = "middle_name";
+            this.middle_name.Size = new System.Drawing.Size(229, 27);
+            this.middle_name.TabIndex = 38;
+            this.middle_name.Text = "Test";
             // 
             // label2
             // 
@@ -386,12 +400,13 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "First name";
             // 
-            // textBox2
+            // first_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(225, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 27);
-            this.textBox2.TabIndex = 36;
+            this.first_name.Location = new System.Drawing.Point(225, 75);
+            this.first_name.Name = "first_name";
+            this.first_name.Size = new System.Drawing.Size(281, 27);
+            this.first_name.TabIndex = 36;
+            this.first_name.Text = "Edmond";
             // 
             // label1
             // 
@@ -402,12 +417,13 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Last name";
             // 
-            // textBox1
+            // last_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(619, 27);
-            this.textBox1.TabIndex = 34;
+            this.last_name.Location = new System.Drawing.Point(225, 33);
+            this.last_name.Name = "last_name";
+            this.last_name.Size = new System.Drawing.Size(619, 27);
+            this.last_name.TabIndex = 66;
+            this.last_name.Text = "Chen";
             // 
             // domainUpDown1
             // 
@@ -681,35 +697,35 @@
         private Button button2;
         private Button button1;
         private Label label12;
-        private TextBox textBox12;
+        private TextBox first_visit;
         private Label label13;
-        private TextBox textBox13;
+        private TextBox last_visit;
         private Label label14;
-        private TextBox textBox14;
+        private TextBox occupation;
         private Label label15;
-        private TextBox textBox15;
+        private TextBox email;
         private Label label8;
-        private TextBox textBox8;
+        private TextBox misc;
         private Label label9;
-        private TextBox textBox9;
+        private TextBox insurance;
         private Label label10;
-        private TextBox textBox10;
+        private TextBox postal_code;
         private Label label11;
-        private TextBox textBox11;
+        private TextBox province;
         private Label label6;
-        private TextBox textBox6;
+        private TextBox phone;
         private Label label7;
-        private TextBox textBox7;
+        private TextBox birth_date;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox city;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox address;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox middle_name;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox first_name;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox last_name;
         private DomainUpDown domainUpDown1;
         private TabPage tabPage2;
         private TextBox textBox22;
