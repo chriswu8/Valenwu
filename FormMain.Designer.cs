@@ -28,51 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BookButton = new System.Windows.Forms.Button();
+            this.ProductsButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.PatientsButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ServicesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // BookButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Location = new System.Drawing.Point(150, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "The Book";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BookButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BookButton.Location = new System.Drawing.Point(150, 12);
+            this.BookButton.Name = "BookButton";
+            this.BookButton.Size = new System.Drawing.Size(135, 49);
+            this.BookButton.TabIndex = 1;
+            this.BookButton.Text = "The Book";
+            this.BookButton.UseVisualStyleBackColor = false;
+            this.BookButton.Click += new System.EventHandler(this.OpenFormButton_Click);
             // 
-            // button3
+            // ProductsButton
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button3.Location = new System.Drawing.Point(291, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Products";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button4.Location = new System.Drawing.Point(432, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 49);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Services";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ProductsButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ProductsButton.Location = new System.Drawing.Point(291, 12);
+            this.ProductsButton.Name = "ProductsButton";
+            this.ProductsButton.Size = new System.Drawing.Size(135, 49);
+            this.ProductsButton.TabIndex = 3;
+            this.ProductsButton.Text = "Products";
+            this.ProductsButton.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -128,16 +119,16 @@
             this.button8.Text = "EOD Posting";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // PatientsButton
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button9.Location = new System.Drawing.Point(9, 12);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(135, 49);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Patients";
-            //this.button9.UseVisualStyleBackColor = false;
-            //this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.PatientsButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.PatientsButton.Location = new System.Drawing.Point(9, 12);
+            this.PatientsButton.Name = "PatientsButton";
+            this.PatientsButton.Size = new System.Drawing.Size(135, 49);
+            this.PatientsButton.TabIndex = 11;
+            this.PatientsButton.Text = "Patients";
+            this.PatientsButton.UseVisualStyleBackColor = false;
+            this.PatientsButton.Click += new System.EventHandler(this.OpenFormButton_Click);
             // 
             // pictureBox2
             // 
@@ -159,23 +150,35 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "End-of-Day";
             // 
+            // ServicesButton
+            // 
+            this.ServicesButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ServicesButton.Location = new System.Drawing.Point(432, 12);
+            this.ServicesButton.Name = "ServicesButton";
+            this.ServicesButton.Size = new System.Drawing.Size(135, 49);
+            this.ServicesButton.TabIndex = 16;
+            this.ServicesButton.Text = "Services";
+            this.ServicesButton.UseVisualStyleBackColor = false;
+            this.ServicesButton.Click += new System.EventHandler(this.OpenFormButton_Click);
+
+            // 
             // Valenwu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 254);
+            this.Controls.Add(this.ServicesButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.PatientsButton);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ProductsButton);
+            this.Controls.Add(this.BookButton);
             this.IsMdiContainer = true;
             this.Name = "Valenwu";
             this.Text = "Valenwu";
@@ -187,17 +190,17 @@
         }
 
         #endregion
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button BookButton;
+        private Button ProductsButton;
         private Button button5;
         private PictureBox pictureBox1;
         private Label label2;
         private Button button6;
         private Button button7;
         private Button button8;
-        private Button button9;
+        private Button PatientsButton;
         private PictureBox pictureBox2;
         private Label label1;
+        private Button ServicesButton;
     }
 }

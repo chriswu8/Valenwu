@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ExamTextbox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FeeTextbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -82,12 +82,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Exam";
             // 
-            // textBox1
+            // ExamTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(374, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 27);
-            this.textBox1.TabIndex = 5;
+            this.ExamTextbox.Location = new System.Drawing.Point(374, 41);
+            this.ExamTextbox.Name = "ExamTextbox";
+            this.ExamTextbox.Size = new System.Drawing.Size(149, 27);
+            this.ExamTextbox.TabIndex = 5;
             // 
             // button1
             // 
@@ -107,12 +107,12 @@
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // FeeTextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(374, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 27);
-            this.textBox2.TabIndex = 9;
+            this.FeeTextbox.Location = new System.Drawing.Point(374, 74);
+            this.FeeTextbox.Name = "FeeTextbox";
+            this.FeeTextbox.Size = new System.Drawing.Size(149, 27);
+            this.FeeTextbox.TabIndex = 9;
             // 
             // label4
             // 
@@ -128,11 +128,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 195);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.FeeTextbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ExamTextbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -153,10 +153,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox ExamTextbox;
         private Button button1;
         private Button button2;
-        private TextBox textBox2;
+        private TextBox FeeTextbox;
         private Label label4;
     }
 }
